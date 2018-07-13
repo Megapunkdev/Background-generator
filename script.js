@@ -1,12 +1,12 @@
-let h3 = document.querySelector('h3');
+const h3 = document.querySelector('h3');
 let color1 = document.querySelector('.color1');
 let color2 = document.querySelector('.color2');
-let body = document.querySelector('body');
-let btn = document.querySelector('button');
+const body = document.querySelector('body');
+const btn = document.querySelector('button');
 
-setGradient();
+setRandomRGBGradient();
 
-function setRandomRGB() {
+function setRandomRGBGradient () {
     color1.value = randomRGB();
     color2.value = randomRGB();
 
@@ -27,4 +27,4 @@ color1.addEventListener('input', setGradient)
 
 color2.addEventListener('input', setGradient)
 
-btn.addEventListener('click', setRandomRGB)
+btn.addEventListener('click', setRandomRGBGradient)
